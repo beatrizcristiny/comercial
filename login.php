@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Formulário</h1>
-    <form method="POST">
+    <form method="POST"> <!-- o post é quando os dados são enviados de forma que n apareça só acessa no php-->
         Usuário <br>
         <input type="text" name="usuario"><br><br>
         
@@ -22,4 +22,10 @@
 </html>
 
 <?php
+if(isset($_POST["usuario"])){ #aqui ele ta vendo se existe o valor e pegando oq o usuaro digitou pra executar o codigo
+$usuario = $POST["usuario"]; #guarda o nome digitado e na linha d baixo a senha
+$senha = $_POST["senha"];
+$erro = false;
+
+}
 ?>
