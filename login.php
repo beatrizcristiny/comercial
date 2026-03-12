@@ -20,7 +20,7 @@ if(isset($_POST["usuario"])){ #aqui ele ta vendo se existe o valor e pegando oq 
 $usuario = $_POST["usuario"]; #guarda o nome digitado e na linha d baixo a senha
 $senha = $_POST["senha"];
 $erro = false;
-if(strlen($usuario) < 4 || strlen($usuario) > 15){
+if(strlen($usuario) < 4 || strlen($usuario) > 15){ #strlen conta quantos caracteres foram digitados
     echo "Está errado: o nome de usuário deve ter pelo menos entre 4 e 15 caracteres.";
     $erro = true;
 }
@@ -29,19 +29,19 @@ if (strlen($senha) < 4 || strlen($senha) > 15){
     $erro = true;
 }
 if($erro == false){
-    if(($usuario == "PROFESSOR" || $usuario == "COORDENADOR") && $senha == "DEVISATE"){
+    if(($usuario == "PROFESSOR" || $usuario == "COORDENADOR") && $senha == "DEVISATE"){#verfica se a senha e o usuarios estao certos
      $hora = date("H:i"); 
      $data = date("d/m/y");
      echo "Bem vindo, $usuario, você realizou o acesso às $hora no dia $data.";  
     }
-    else if ($usuario != "PROFESSOR" && $usuario != "COORDENADOR" && $senha == "DEVISATE"){
+    else if ($usuario != "PROFESSOR" && $usuario != "COORDENADOR" && $senha == "DEVISATE"){ #essa parte são os casos de "se"
      echo "Erro: o nome de usuário está incorreto.";   
     }
     else if (($usuario == "PROFESSOR" || $usuario == "COORDENADOR") && $senha != "DEVISATE"){
         echo "Erro: A senha está incorreta.";
     }
     else{
-        echo"Erro: o nome de usário e senha estão incorretos.";
+        echo"Erro: o nome de usuário e senha estão incorretos.";
     }
 }
 }
