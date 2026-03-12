@@ -11,7 +11,7 @@
         Usuário <br>
         <input type="text" name="usuario"><br><br>  
         Senha <br>
-        <input type="passaword" name="senha"><br><br>
+        <input type="password" name="senha"><br><br>
         <input type="submit" value="Entrar">
 </form>
 
@@ -34,7 +34,7 @@ if($erro == false){
      $data = date("d/m/y");
      echo "Bem vindo, $usuario, você realizou o acesso às $hora no dia $data.";  
     }
-    else if ($usuario != "PROFESSOR " && $usuario != "COORDENADOR" && $senha != "DEVISATE"){
+    else if ($usuario != "PROFESSOR" && $usuario != "COORDENADOR" && $senha == "DEVISATE"){
      echo "Erro: o nome de usuário está incorreto.";   
     }
     else if (($usuario == "PROFESSOR" || $usuario == "COORDENADOR") && $senha != "DEVISATE"){
