@@ -9,8 +9,7 @@
     <h1>Formulário</h1>
     <form method="POST"> <!-- o post é quando os dados são enviados de forma que n apareça só acessa no php-->
         Usuário <br>
-        <input type="text" name="usuario"><br><br>
-        
+        <input type="text" name="usuario"><br><br>  
         Senha <br>
         <input type="passaword" name="senha"><br><br>
         <input type="submit" value="Entrar">
