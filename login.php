@@ -38,12 +38,14 @@ if($erro == false){
      echo "Erro: o nome de usuário está incorreto.";   
     }
     else if (($usuario == "PROFESSOR" || $usuario == "COORDENADOR") && $senha != "DEVISATE"){
-        echo "Erro: A senha está incorreta";
+        echo "Erro: A senha está incorreta.";
     }
     else{
-        echo"Erro: o nome de usário e sena estão incorretos.";
+        echo"Erro: o nome de usário e senha estão incorretos.";
     }
 }
+}
+
 ?>
 </body>
 </html>
