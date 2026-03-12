@@ -17,7 +17,7 @@
 
 <?php
 if(isset($_POST["usuario"])){ #aqui ele ta vendo se existe o valor e pegando oq o usuaro digitou pra executar o codigo
-$usuario = $POST["usuario"]; #guarda o nome digitado e na linha d baixo a senha
+$usuario = $_POST["usuario"]; #guarda o nome digitado e na linha d baixo a senha
 $senha = $_POST["senha"];
 $erro = false;
 if(strlen($usuario) < 4 || strlen($usuario) > 15){
