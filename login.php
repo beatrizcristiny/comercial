@@ -30,8 +30,8 @@ if (strlen($senha) < 4 || strlen($senha) > 15){
 }
 if($erro == false){
     if(($usuario == "PROFESSOR" || $usuario == "COORDENADOR") && $senha == "DEVISATE"){
-     $hora = date("H:i") 
-     $data = date("d/m/y")
+     $hora = date("H:i"); 
+     $data = date("d/m/y");
      echo "Bem vindo, $usuario, você realizou o acesso às $hora no dia $data.";  
     }
     else if ($usuario != "PROFESSOR " && $usuario != "COORDENADOR" && $senha != "DEVISATE"){
